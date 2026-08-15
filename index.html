@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LizoCalc — Free Online Calculators for Finance, Health, Math, Physics &amp; Time</title>
+<meta name="description" content="LizoCalc is a free calculator hub covering finance, health, math, physics, time and education. No signup, no clutter — just fast, accurate results.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="https://www.lizocalc.com" class="brand">
+      <span class="brand-mark">=</span>
+      <span class="brand-name">LizoCalc</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#what-it-is">What it is</a>
+      <a href="#categories">Categories</a>
+      <a href="#why">Why LizoCalc</a>
+      <a href="https://www.lizocalc.com/calculators" class="nav-cta">Open the calculators</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero wrap" id="what-it-is">
+    <div class="hero-copy">
+      <p class="eyebrow">FREE &middot; NO SIGNUP &middot; RUNS IN YOUR BROWSER</p>
+      <h1>Type your numbers.<br>Get your answer.<br><span class="accent">That's it.</span></h1>
+      <p class="lede">
+        LizoCalc is a small collection of calculators for the things people
+        actually need to work out — a mortgage payment, a BMI, a percentage,
+        the days left until a deadline. Everything lives on one site, loads
+        fast, and never asks you to create an account.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://www.lizocalc.com" target="_blank" rel="noopener">Visit LizoCalc.com</a>
+        <a class="btn btn-ghost" href="https://www.lizocalc.com/calculators" target="_blank" rel="noopener">Browse all calculators</a>
+      </div>
+    </div>
+
+    <!-- Signature element: a real, working calculator -->
+    <div class="hero-device" aria-label="Live percentage calculator demo">
+      <div class="device-top">
+        <span class="device-dot"></span>
+        <span class="device-label">PERCENT · DEMO</span>
+      </div>
+      <div class="device-screen">
+        <p class="screen-hint" id="screenHint">What is <span id="pctLabel">15</span>% of <span id="baseLabel">200</span>?</p>
+        <p class="screen-result" id="screenResult">30</p>
+      </div>
+      <div class="device-controls">
+        <label class="ctrl">
+          <span>Percent</span>
+          <input type="number" id="pctInput" value="15" inputmode="decimal">
+        </label>
+        <label class="ctrl">
+          <span>Of number</span>
+          <input type="number" id="baseInput" value="200" inputmode="decimal">
+        </label>
+      </div>
+      <p class="device-caption">A tiny taste of what's on the site — every calculator on LizoCalc works just like this.</p>
+    </div>
+  </section>
+
+  <!-- FUNCTION PAD / CATEGORIES -->
+  <section class="categories wrap" id="categories">
+    <h2 class="section-title">Six categories, one keypad</h2>
+    <p class="section-sub">Every calculator on LizoCalc sits in one of these groups. Pick one to see what's inside.</p>
+
+    <div class="pad">
+      <a class="key" href="https://www.lizocalc.com/calculators/financial" target="_blank" rel="noopener">
+        <span class="key-code">FIN</span>
+        <span class="key-name">Financial</span>
+        <span class="key-desc">Mortgages, loans, interest, ROI</span>
+      </a>
+      <a class="key" href="https://www.lizocalc.com/calculators/health" target="_blank" rel="noopener">
+        <span class="key-code">HLT</span>
+        <span class="key-name">Health</span>
+        <span class="key-desc">BMI, calories, BMR, TDEE, sleep</span>
+      </a>
+      <a class="key" href="https://www.lizocalc.com/calculators/math" target="_blank" rel="noopener">
+        <span class="key-code">MTH</span>
+        <span class="key-name">Math</span>
+        <span class="key-desc">Fractions, percentages, LCM, GCF</span>
+      </a>
+      <a class="key" href="https://www.lizocalc.com/calculators/physics" target="_blank" rel="noopener">
+        <span class="key-code">PHY</span>
+        <span class="key-name">Physics</span>
+        <span class="key-desc">Density, speed, mass, weight</span>
+      </a>
+      <a class="key" href="https://www.lizocalc.com/calculators/time" target="_blank" rel="noopener">
+        <span class="key-code">TME</span>
+        <span class="key-name">Time</span>
+        <span class="key-desc">Age, dates, hours, day counts</span>
+      </a>
+      <a class="key" href="https://www.lizocalc.com/calculators/education" target="_blank" rel="noopener">
+        <span class="key-code">EDU</span>
+        <span class="key-name">Education</span>
+        <span class="key-desc">GPA, CGPA, grades, weighting</span>
+      </a>
+    </div>
+
+    <h3 class="picks-title">A few places to start</h3>
+    <ul class="picks">
+      <li><a href="https://www.lizocalc.com/calculators/financial/mortgage-calculator" target="_blank" rel="noopener">Mortgage Calculator</a></li>
+      <li><a href="https://www.lizocalc.com/calculators/financial/compound-interest-calculator" target="_blank" rel="noopener">Compound Interest Calculator</a></li>
+      <li><a href="https://www.lizocalc.com/calculators/health/bmi-calculator" target="_blank" rel="noopener">BMI Calculator</a></li>
+      <li><a href="https://www.lizocalc.com/calculators/health/calorie-calculator" target="_blank" rel="noopener">Calorie Calculator</a></li>
+      <li><a href="https://www.lizocalc.com/calculators/math/percentage-calculator" target="_blank" rel="noopener">Percentage Calculator</a></li>
+      <li><a href="https://www.lizocalc.com/calculators/math/fraction-calculator" target="_blank" rel="noopener">Fraction Calculator</a></li>
+      <li><a href="https://www.lizocalc.com/calculators/time/age-calculator" target="_blank" rel="noopener">Age Calculator</a></li>
+            <li><a href="https://www.lizocalc.com/calculators/time/date-calculator" target="_blank" rel="noopener">date Calculator</a></li>
+      <li><a href="https://www.lizocalc.com/calculators/education/gpa-calculator" target="_blank" rel="noopener">GPA Calculator</a></li>
+    </ul>
+  </section>
+
+  <!-- WHY -->
+  <section class="why wrap" id="why">
+    <h2 class="section-title">Why people stick with it</h2>
+    <div class="why-grid">
+      <div class="why-card">
+        <span class="why-num">No.1</span>
+        <h3>Nothing to sign up for</h3>
+        <p>Open a calculator, type your numbers, read your answer. There's no account, no email, no wall in the way.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-num">No.2</span>
+        <h3>One site, not ten tabs</h3>
+        <p>Finance, health, math, physics, time, and education calculators all live in the same place, built the same simple way.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-num">No.3</span>
+        <h3>Your numbers stay yours</h3>
+        <p>Every calculation runs in your own browser. We don't see what you type, and we don't save it anywhere.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-num">No.4</span>
+        <h3>Fast on any device</h3>
+        <p>The site is light and responsive, so it works just as well on a phone in the car as it does on a desktop.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark small">=</span>
+      <span>LizoCalc</span>
+    </div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="https://www.lizocalc.com" target="_blank" rel="noopener">Home</a>
+      <a href="https://www.lizocalc.com/calculators" target="_blank" rel="noopener">All Calculators</a>
+      <a href="https://www.lizocalc.com/about" target="_blank" rel="noopener">About</a>
+      <a href="https://www.lizocalc.com/contact" target="_blank" rel="noopener">Contact</a>
+      <a href="https://www.lizocalc.com/privacy" target="_blank" rel="noopener">Privacy</a>
+      <a href="https://www.lizocalc.com/terms" target="_blank" rel="noopener">Terms</a>
+    </nav>
+    <p class="footer-note">&copy; <span id="year"></span> LizoCalc. This page is an introduction — the calculators themselves live at lizocalc.com.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
